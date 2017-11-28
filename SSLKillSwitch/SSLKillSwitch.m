@@ -39,7 +39,7 @@ static void SSKLog(NSString *format, ...)
 // Utility function to read the Tweak's preferences
 static BOOL shouldHookFromPreference(NSString *preferenceSetting)
 {
-    BOOL shouldHook = NO;
+    BOOL shouldHook = YES;
     NSMutableDictionary* plist = [[NSMutableDictionary alloc] initWithContentsOfFile:PREFERENCE_FILE];
     
     if (!plist)
